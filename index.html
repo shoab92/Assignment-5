@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body class="bg-green-50">
+
+    <!-- nav bar -->
+    <div class="max-h-[100px] bg-white p-5 flex justify-between">
+
+        <!-- Emergency logs -->
+        <div class="flex">
+            <img class="max-h-[50px]" src="logo.png" alt="404 not found !!">
+            <h1 class="font-bold text-green-800 ml-3">Emergency <br> Service</h1>
+        </div>
+
+        <!-- buttons -->
+        <div class="flex gap-5 p-2">
+            <button class=" bg-green-100 items-center justify-center rounded-3xl  flex p-5  gap-3 px-2 py-1">
+                <span id="favCount">0</span>
+                <img class="max-h-[30px]" src="heart.png" alt="">
+            </button>
+            <button class=" bg-green-100 flex items-center justify-center rounded-3xl  gap-3 px-2 py-1">
+                <span id="coinCount">100</span>
+                <img class="max-h-[30px]" src="coin.png" alt="">
+            </button>
+            <button class="  bg-green-100 items-center justify-center rounded-3xl flex gap-3 px-2 py-1">
+                <span id="copyCount">0</span>
+                <img class="max-h-[30px]" src="copy.png" alt="">
+            </button>
+        </div>
+
+
+
+    </div>
+
+    <div class="flex flex-col items-center border-2 border-red-500 bg-green-800 min-h-[250px] w-100% p-7">
+        <img src="logo-dark.png" class="h-[90px] w-[90px]" alt="404 not found !!">
+        <h1 class="text-white font-bold text-3xl mt-5">Emergency Service Directory</h1>
+        <p class="text-white mt-3">Government Emergency Services at Your Fingertip – A Project by Government of the
+            People’s Republic of Bangladesh</p>
+    </div>
+
+    <div class="max-w-7xl h-[1150px] flex justify-center items-center mt-10 mb-10">
+        <div class="w-[1800px] h-[1150px] border-2 border-red-400 m-10  ">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 grid-rows-3 m-5" id="cardgrid">
+                <div class="card-body bg-white m-2 border-2 border-gray-200 rounded-xl ">
+
+                    <!-- <button class="btn btn-ghost btn-circle favBtn" aria-label="favorite">♡</button> -->
+
+                    <div class="flex">
+                        <div>
+                            <p class="text-sm font-bold text-xl text-black-500">National Emergency</p>
+                            <p>National Emergency</p>
+                            <h2 class="card-title text-2xl text-black">999</h2>
+                            <p class="text-xs mt-1 text-gray-500">All</p>
+                        </div>
+                        <button class="btn btn-ghost btn-circle favBtn" aria-label="favorite">♡</button>
+                    </div>
+
+                    <div class="mt-4 flex gap-2">
+                        <button class="btn btn-sm copyBtn">Copy</button>
+                        <a class="btn btn-sm btn-success callBtn" href="tel:999">Call</a>
+                    </div>
+                </div>
+
+
+                <div class="card-body m-2 bg-white border-2 border-gray-200 rounded-xl ">
+                    <div class="flex">
+                        <div>
+                            <p class="text-sm font-bold text-xl text-black-500">National Emergency</p>
+                            <p>Police Helpline Number</p>
+                            <h2 class="card-title text-2xl  text-black">999</h2>
+                            <p class="text-xs mt-1 text-gray-500">Police</p>
+                        </div>
+                        <button class="btn btn-ghost btn-circle favBtn" aria-label="favorite">♡</button>
+                    </div>
+                    <div class="mt-4 flex gap-2">
+                        <button class="btn btn-sm copyBtn">Copy</button>
+                        <a class="btn btn-sm btn-success callBtn" href="tel:999">Call</a>
+                    </div>
+                </div>
+                <div class="card-body m-2 bg-white border-2 border-gray-200 rounded-xl ">
+                    <div class="flex">
+                        <div>
+                            <p class="text-sm font-bold text-xl text-black-500">Fire Service Number</p>
+                            <p>Fire Service</p>
+                            <h2 class="card-title text-2xl  text-black">999</h2>
+                            <p class="text-xs mt-1 text-gray-500">Fire</p>
+                        </div>
+                        <button class="btn btn-ghost btn-circle favBtn" aria-label="favorite">♡</button>
+
+
+                    </div>
+                    <div class="mt-4 flex gap-2">
+                        <button class="btn btn-sm copyBtn">Copy</button>
+                        <a class="btn btn-sm btn-success callBtn" href="tel:999">Call</a>
+                    </div>
+                </div>
+                <div class="card-body m-2 bg-white border-2 border-gray-200 rounded-xl ">
+                    <div class="flex">
+                        <div>
+                            <p class="text-sm font-bold text-xl text-black-500">Ambulance Service</p>
+                            <p>Ambulnece</p>
+                            <h2 class="card-title text-2xl  text-black">999</h2>
+                            <p class="text-xs mt-1 text-gray-500">Health</p>
+                        </div>
+                        <button class="btn btn-ghost btn-circle favBtn" aria-label="favorite">♡</button>
+
+
+                    </div>
+                    <div class="mt-4 flex gap-2">
+                        <button class="btn btn-sm copyBtn">Copy</button>
+                        <a class="btn btn-sm btn-success callBtn" href="tel:999">Call</a>
+                    </div>
+                </div>
+                <div class="card-body m-2 bg-white border-2 border-gray-200 rounded-xl ">
+                    <div class="flex">
+                        <div>
+                            <p class="text-sm font-bold text-xl text-black-500">Women and Child Helpline</p>
+                            <p>Women and Child Helpline</p>
+                            <h2 class="card-title text-2xl  text-black">999</h2>
+                            <p class="text-xs mt-1 text-gray-500">Help</p>
+                        </div>
+                        <button class="btn btn-ghost btn-circle favBtn" aria-label="favorite">♡</button>
+
+
+                    </div>
+                    <div class="mt-4 flex gap-2">
+                        <button class="btn btn-sm copyBtn">Copy</button>
+                        <a class="btn btn-sm btn-success callBtn" href="tel:999">Call</a>
+                    </div>
+                </div>
+                <div class="card-body m-2 bg-white border-2 border-gray-200 rounded-xl ">
+                    <div class="flex">
+                        <div>
+                            <p class="text-sm font-bold text-xl text-black-500">Anti-Corruption Helpline</p>
+                            <p>Anti-Corruption</p>
+                            <h2 class="card-title text-2xl  text-black">999</h2>
+                            <p class="text-xs mt-1 text-gray-500">Govt</p>
+                        </div>
+                        <button class="btn btn-ghost btn-circle favBtn" aria-label="favorite">♡</button>
+
+
+                    </div>
+                    <div class="mt-4 flex gap-2">
+                        <button class="btn btn-sm copyBtn">Copy</button>
+                        <a class="btn btn-sm btn-success callBtn" href="tel:999">Call</a>
+                    </div>
+                </div>
+                <div class="card-body m-2 bg-white border-2 border-gray-200 rounded-xl ">
+                    <div class="flex">
+                        <div>
+                            <p class="text-sm font-bold text-xl text-black-500">Electricity Helpline</p>
+                            <p>Electricity Outrage</p>
+                            <h2 class="card-title text-2xl  text-black">999</h2>
+                            <p class="text-xs mt-1 text-gray-500">Electricity</p>
+                        </div>
+                        <button class="btn btn-ghost btn-circle favBtn" aria-label="favorite">♡</button>
+
+
+                    </div>
+                    <div class="mt-4 flex gap-2">
+                        <button class="btn btn-sm copyBtn">Copy</button>
+                        <a class="btn btn-sm btn-success callBtn" href="tel:999">Call</a>
+                    </div>
+                </div>
+                <div class="card-body m-2 bg-white border-2 border-gray-200 rounded-xl ">
+                    <div class="flex">
+                        <div>
+                            <p class="text-sm font-bold text-xl text-black-500">Brac Helpline</p>
+                            <p>Brac</p>
+                            <h2 class="card-title text-2xl  text-black">999</h2>
+                            <p class="text-xs mt- 1 text-gray-500">NGO</p>
+                        </div>
+                        <button class="btn btn-ghost btn-circle favBtn" aria-label="favorite">♡</button>
+
+
+                    </div>
+                    <div class="mt-4 flex gap-2">
+                        <button class="btn btn-sm copyBtn">Copy</button>
+                        <a class="btn btn-sm btn-success callBtn" href="tel:999">Call</a>
+                    </div>
+                </div>
+                <div class="card-body m-2 bg-white border-2 border-gray-200 rounded-xl ">
+                    <div class="flex">
+                        <div>
+                            <p class="text-sm font-bold text-xl text-black-500">Bangladesh Railway Helpline</p>
+                            <p>Bangladesh Railway</p>
+                            <h2 class="card-title text-2xl  text-black">999</h2>
+                            <p class="text-xs mt-1 text-gray-500">Travel </p>
+                        </div>
+                        <button class="btn btn-ghost btn-circle favBtn" aria-label="favorite">♡</button>
+
+
+                    </div>
+                    <div class="mt-4 flex gap-2">
+                        <button class="btn btn-sm copyBtn">Copy</button>
+                        <a class="btn btn-sm btn-success callBtn" href="tel:999">Call</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="java.js"></script>
+
+</body>
+
+</html>
