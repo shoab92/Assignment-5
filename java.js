@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     list.prepend(li);
   }
 
-  // adding button to the copy
   document.querySelectorAll(".copyBtn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const card = btn.closest(".card");
@@ -39,7 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Call
+
+
   document.querySelectorAll(".callBtn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const card = btn.closest(".card");
@@ -48,7 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
       addHistoryEntry(name, number);
     });
   });
-  // Favs
+
+
+
   let favCount = 0;
   document.querySelectorAll(".favBtn").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -61,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // history
+// sidebar
   const clearBtn = document.getElementById("clearHistory");
   if (clearBtn) {
     clearBtn.addEventListener("click", () => {
@@ -75,20 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// adding_counting(copied+)
 let copyCount = 0;
 const copyButtons = document.querySelectorAll(".copyBtn");;
 copyButtons.forEach((button) => {
@@ -107,35 +96,3 @@ copyButtons.forEach((button) => {
     });
   });
 });
-
-
-
-
-// // Copy buttons
-// let copyCount = 0; // counter
-// document.querySelectorAll(".copyBtn").forEach((btn) => {
-//   btn.addEventListener("click", () => {
-//     const card = btn.closest(".card-body"); 
-//     const number = card?.dataset.number || "";
-//     navigator.clipboard
-//       .writeText(number)
-//       .then(() => {
-//         // update button UI
-//         btn.classList.add("btn-success");
-//         btn.textContent = "Copied";
-
-//         // increment counter
-//         copyCount++;
-//         const counter = document.getElementById("copyCount");
-//         if (counter) counter.textContent = copyCount;
-
-//         setTimeout(() => {
-//           btn.classList.remove("btn-success");
-//           btn.textContent = "Copy";
-//         }, 1200);
-//       })
-//       .catch(() => {
-//         alert("Copy failed.");
-//       });
-//   });
-// });
